@@ -1,0 +1,94 @@
+@startuml
+
+class GameManager {
+    - SlimeManager slimeManager
+    - Rhythm rhythm
+    - Map map
+    - Blade blade
+    - DataTracking dataTracking // Tracks player performance and game statistics
+    - bool isGameActive
+    - String gameState
+    - float totalGameTime
+    + startGame()
+    + runGameLoop()
+    + updateGame() 
+    + pauseGame()
+    + resumeGame()
+    + endGame()
+}
+
+class SlimeManager {
+    - List<Slime> slimes // Array of spawned slimes
+    + spawn(p, beat_offset, m_grav, m_spd) // Spawns a new slime
+    + draw(screen, t) // Draws all slimes on the screen
+    + killSlime(slime) // Removes a specific slime from the array
+}
+
+class Slime {
+    - Vector2D vPos0
+    - Vector2D vVel0
+    - Vector2D vPos
+    - int r
+    - float beat_offset
+    - float m_spd
+    - float m_grav
+    + position(t)
+    + draw(screen, t)
+}
+
+class Blade {
+    - int x
+    - int y
+    - int speed_threshold
+    - List<Vector2D> trail
+    + get_pos()
+}
+
+class Map {
+    - SlimeManager slimeManager
+    - Rhythm rhythm
+    - MapData map
+    - int beat_index
+    - float g_grav
+    - float g_spd
+    - int spawn_ahead
+    + loadMaps()
+    + selectMap(filename)
+    + tick(ticks)
+    + getNextBeatGroup(current_beat)
+}
+
+class Rhythm {
+    - float current_beat
+    - int bpm
+    + tick(ticks)
+}
+
+class DataTracking {
+    - int maxScore
+    - int maxCombos
+    - float sliceAccuracy
+    - float rhythmAccuracy
+    - float playerSpeed
+    - int totalHits
+    - int totalMisses
+    + saveDataToJSON(Player) // Saves player data to a JSON file
+    + loadDataFromJSON(Player) // Loads player data from a JSON file
+    + analyzePerformance() // Analyzes the player's performance
+    + updateStats() // Updates the player's statistics
+}
+
+' Relationships:
+GameManager --> Rhythm : "syncs with"
+GameManager --> Map : "uses map for gameplay"
+GameManager --> Blade : "handles input via"
+GameManager --> DataTracking : "GameManager provides data to DataTracking"
+GameManager *-- SlimeManager : "manages slimes"
+SlimeManager o-- Slime : "Aggregation: SlimeManager contains Slime objects"
+Map --> Rhythm : "provides beat map"
+Map --> SlimeManager : "spawns slimes"
+Blade --> Slime : "interacts with"
+Rhythm --> Map : "Reads Rythm data from Map"
+Blade --> Rhythm : "checks rhythm"
+
+@enduml
