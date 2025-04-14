@@ -11,7 +11,7 @@ SPAWN_AHEAD = 10
 
 class GameManager:
     pygame.init()
-    pygame.display.set_caption("slimeFalling")
+    pygame.display.set_caption("Ryth-Slice")
 
  
     def __init__(self):
