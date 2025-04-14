@@ -10,8 +10,7 @@ class SlimeManager:
     def spawn(self, p, beat_offset, m_grav, m_spd):
         vPos = Vector2D(p[0], p[1])
         vVel = Vector2D(random.randint(-5,5),0)
-        radius = random.randint(30, 40)
-        self.slimes.append(Slime(radius, vPos, vVel, beat_offset, m_grav, m_spd))
+        self.slimes.append(Slime(30, vPos, vVel, beat_offset, m_grav, m_spd))
 
     def draw(self, screen, t):
         for s in self.slimes:
