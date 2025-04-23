@@ -1,47 +1,47 @@
 [
   {
     "collectedScore": 1200,
-    "Combos": 15,
-    "SliceAccuracyOverTime": [90, 92, 88, 91, 89],
-    "RhythmAccuracyOverSongTime": [85, 87, 86, 88, 84],
-    "Song": "Song A",
-    "Player": "Player1",
-    "HitsAndMisses": { "Hits": 50, "Misses": 5 }
+    "combos": 15,
+    "sliceAccuracyOverTime": [95, 92, 90, 88, 85],
+    "rhythmAccuracyOverSongTime": [98, 96, 94, 92, 90],
+    "song": "Song A",
+    "player": "Player1",
+    "hitsAndMisses": { "hits": 50, "misses": 5 }
   },
   {
     "collectedScore": 1500,
-    "Combos": 20,
-    "SliceAccuracyOverTime": [93, 95, 94, 92, 96],
-    "RhythmAccuracyOverSongTime": [89, 90, 91, 88, 87],
-    "Song": "Song B",
-    "Player": "Player2",
-    "HitsAndMisses": { "Hits": 60, "Misses": 3 }
+    "combos": 20,
+    "sliceAccuracyOverTime": [97, 95, 93, 91, 89],
+    "rhythmAccuracyOverSongTime": [99, 97, 95, 93, 91],
+    "song": "Song B",
+    "player": "Player2",
+    "hitsAndMisses": { "hits": 60, "misses": 3 }
   },
   {
     "collectedScore": 1100,
-    "Combos": 10,
-    "SliceAccuracyOverTime": [85, 87, 86, 84, 83],
-    "RhythmAccuracyOverSongTime": [80, 82, 81, 79, 78],
+    "combos": 10,
+    "sliceAccuracyOverTime": [90, 88, 85, 83, 80],
+    "RhythmAccuracyOverSongTime": [95, 94, 92, 91, 90],
     "Song": "Song C",
     "Player": "Player3",
-    "HitsAndMisses": { "Hits": 40, "Misses": 8 }
+    "HitsAndMisses": { "Hits": 140, "Misses": 10 }
   },
   {
-    "collectedScore": 1400,
-    "Combos": 18,
-    "SliceAccuracyOverTime": [91, 93, 92, 90, 94],
-    "RhythmAccuracyOverSongTime": [86, 88, 87, 85, 84],
+    "collectedScore": 13000,
+    "Combos": 48,
+    "SliceAccuracyOverTime": [93, 91, 89, 88, 86],
+    "RhythmAccuracyOverSongTime": [97, 96, 94, 93, 92],
     "Song": "Song D",
     "Player": "Player4",
-    "HitsAndMisses": { "Hits": 55, "Misses": 4 }
+    "HitsAndMisses": { "Hits": 160, "Misses": 7 }
   },
   {
-    "collectedScore": 1300,
-    "Combos": 12,
-    "SliceAccuracyOverTime": [88, 89, 87, 86, 85],
-    "RhythmAccuracyOverSongTime": [83, 84, 82, 81, 80],
+    "collectedScore": 14000,
+    "Combos": 52,
+    "SliceAccuracyOverTime": [94, 92, 91, 89, 88],
+    "RhythmAccuracyOverSongTime": [98, 97, 95, 94, 93],
     "Song": "Song E",
     "Player": "Player5",
-    "HitsAndMisses": { "Hits": 45, "Misses": 6 }
+    "HitsAndMisses": { "Hits": 170, "Misses": 4 }
   }
 ]
