@@ -1,0 +1,47 @@
+[
+  {
+    "collectedScore": 1200,
+    "combos": 15,
+    "sliceAccuracyOverTime": [95, 97, 96, 94, 98],
+    "rhythmAccuracyOverSongTime": [92, 93, 91, 94, 95],
+    "song": "Song A",
+    "player": "Player1",
+    "hitsAndMisses": { "hits": 50, "misses": 5 }
+  },
+  {
+    "collectedScore": 1500,
+    "combos": 20,
+    "sliceAccuracyOverTime": [96, 94, 93, 91, 90],
+    "rhythmAccuracyOverSongTime": [99, 98, 96, 95, 93],
+    "song": "Song B",
+    "player": "Player2",
+    "hitsAndMisses": { "hits": 60, "misses": 3 }
+  },
+  {
+    "collectedScore": 1100,
+    "combos": 10,
+    "sliceAccuracyOverTime": [90, 88, 85, 83, 80],
+    "rhythmAccuracyOverSongTime": [95, 93, 91, 89, 87],
+    "song": "Song C",
+    "player": "Player3",
+    "hitsAndMisses": { "hits": 40, "misses": 10 }
+  },
+  {
+    "collectedScore": 1400,
+    "combos": 18,
+    "sliceAccuracyOverTime": [94, 92, 91, 89, 88],
+    "rhythmAccuracyOverSongTime": [97, 96, 94, 93, 91],
+    "song": "Song D",
+    "player": "Player4",
+    "hitsAndMisses": { "hits": 55, "misses": 6 }
+  },
+  {
+    "collectedScore": 1300,
+    "combos": 12,
+    "sliceAccuracyOverTime": [92, 90, 88, 86, 84],
+    "rhythmAccuracyOverSongTime": [96, 94, 92, 90, 88],
+    "song": "Song E",
+    "player": "Player5",
+    "hitsAndMisses": { "hits": 45, "misses": 8 }
+  }
+]

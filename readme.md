@@ -14,7 +14,10 @@
    ```bash
    python game.py
    ```
+## Eval Notes
 
+- Songs are loaded from the components/maps folder
+- Data collected from plays are in components/data.json 
 ## Notes
 - Ensure all dependencies are installed before running the game.
 - The game window will open, and you can interact with it using your mouse.
