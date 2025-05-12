@@ -9,4 +9,9 @@
 Players swipe to slice slimes while avoiding obstacles to the beat of the song. Each song features a “Map” that dictates the spawn patterns of the slimes. Using an inverse kinematics-based physics system, the game predicts the slime’s position at the point of contact or “hit.” 
 Slimes rise from the bottom of the screen toward the hitpoint, and players earn scores based on their timing
 
+## Sources
+- Music: https://splice.com/sounds/beatmaker
+- Editing sofware: https://vocalremover.org/cutter
+- Assets: https://www.gamedevmarket.net/asset/5-slime-sprite-sheet
+
 ![Uml Class Diagram](https://github.com/taamtera/Ryth-Slice/blob/main/out/diagram/diagram.png?raw=true)
