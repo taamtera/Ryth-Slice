@@ -4,7 +4,8 @@
 1. Install Python (version 3.8 or higher).
 2. Install the required Python packages:
    ```bash
-   pip install pygame numpy pandas matplotlib seaborn random
+   pip install -r requirements.txt
+
    ```
 
 
